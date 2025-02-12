@@ -22,10 +22,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: #c31432; 
+    /* background: #c31432; 
 background: -webkit-linear-gradient(to right, #771b3a, #c20c2a); 
-background: linear-gradient(to right, #884259, #880d21); 
+background: linear-gradient(to right, #884259, #880d21);  */
 
+background-image: linear-gradient(to right, #ff8177 0%, #dd685d 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     position: fixed;
     width: 98.5%;
     top: 0;
@@ -35,6 +36,7 @@ background: linear-gradient(to right, #884259, #880d21);
 
 nav {
     display: flex;
+    /* height: 5rem; */
 }
 
 nav a {
@@ -45,8 +47,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #860b34;
-    text-decoration: underline;
+    color: #080707;
+    text-decoration: none;
 }
 
 .hamburger {
@@ -57,7 +59,7 @@ nav a:hover {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px ) and (min-width : 412px){
     .hamburger {
         display: block;
     }
@@ -65,12 +67,13 @@ nav a:hover {
     nav {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #c31432; 
+        position:absolute;
+        top: 70px;
+        right: 10px;
+        background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+        /* background: #c31432; 
 background: -webkit-linear-gradient(to right, #771b3a, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #77233f, #c31432);
+/*background: linear-gradient(to right, #77233f, #c31432); */
         width: 30%;
         text-align: center;
         padding: 1rem 0;
@@ -83,8 +86,18 @@ background: linear-gradient(to right, #77233f, #c31432);
 
     nav a {
         padding: 1rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 1rem auto;
+    
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+   
 }
 
 
@@ -176,22 +189,36 @@ section h2 {
     margin-top: 0.5rem;
 }
 
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 2rem 0;
+    /* flex-wrap: wrap; */
+    flex: 1;
+}
 
 .project {
     background: #44475a;
-    margin: 2rem 0;
     padding: 1.5rem;
     border-radius: 10px;
-    color: rgb(7, 7, 7);
+    color: white;
     box-shadow: 0 4px 10px rgba(82, 80, 80, 0.1);
     transition: transform 0.3s ease;
+    flex: 2; /* Take half of the container */
 }
 
 .project img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
 }
+.project-summary{
+    flex: 2; /* Content section takes up more space */
+}
+
+
+
 
 .project:hover {
     transform: scale(1.05);
@@ -211,14 +238,21 @@ section h2 {
 .project-links a:hover {
     background: #8bff88;
 }
+.contact1{
+height: 40px;
+width: 40px;
+display: flex;
+justify-self: center;
+}
+
 
 /* Footer */
 footer {
-    background: #97627b;
+    background-image: linear-gradient(to right, #ff8177 0%, #dd685d 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     color: white;
     text-align: center;
     padding: 1.5rem;
-    position: relative;
+    /* position: relative; */
     bottom: 0;
     width: 100%;
 }
