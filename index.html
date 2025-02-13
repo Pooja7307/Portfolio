@@ -1,4 +1,4 @@
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,5 +79,217 @@
         <p>© 2025 Pooja Gautam</p>
     </footer>
 <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: #161b22;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #58a6ff;
+        }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: #21262d;
+                width: 100%;
+                text-align: center;
+                padding: 1rem 0;
+            }
+            nav.show-nav {
+                display: flex;
+            }
+        }
+        section {
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 1rem auto;
+        }
+        .gif {
+            width: 250px;
+            margin: 1rem auto;
+            animation: float 3s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .skill img {
+            width: 100px;
+            height: 100px;
+            transition: transform 1s;
+        }
+        .skill img:hover {
+            transform: rotateY(360deg);
+        }
+        .project {
+            display: flex;
+            align-items: center;
+            background: #21262d;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 5px;
+            color: white;
+        }
+        .project img {
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .project-details {
+            width: 50%;
+            padding: 1rem;
+        }
+        .project-links a, .contact-links a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .project-links a:hover, .contact-links a:hover {
+            background: #2ea043;
+        }
+        .contact-links a img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I'm a passionate Web Engineer.</p>
+        <img src="animated_coder.gif" alt="Animated Coder GIF" class="gif">
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <p>Hi, I'm a web engineer with expertise in modern web technologies.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill"><img src="html_icon.png" alt="HTML Icon"><p>HTML</p></div>
+            <div class="skill"><img src="css_icon.png" alt="CSS Icon"><p>CSS</p></div>
+            <div class="skill"><img src="js_icon.png" alt="JavaScript Icon"><p>JavaScript</p></div>
+            <div class="skill"><img src="react_icon.png" alt="React Icon"><p>React</p></div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="project1_screenshot.jpg" alt="Project Screenshot">
+            <div class="project-details">
+                <h3>Project 1</h3>
+                <p>A brief summary of the project...</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourrepo" target="_blank">GitHub</a>
+                    <a href="https://yourproject.com" target="_blank">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-links">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><img src="linkedin_icon.png" alt="LinkedIn">LinkedIn</a>
+            <a href="https://github.com/yourprofile" target="_blank"><img src="github_icon.png" alt="GitHub">GitHub</a>
+        </div>
+    </section>
+    
+    <script>
+        function toggleMenu() {
+            let nav = document.getElementById('navMenu');
+            nav.classList.toggle('show-nav');
+        }
+    </script>
 </body>
 </html>
