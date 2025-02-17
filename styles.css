@@ -11,7 +11,7 @@ header {
     align-items: center;
     /* padding: 1rem; */
     background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(163, 208, 214) 51.5%, rgba(255,252,247,1) 88.6% );
-    color: rgb(8, 41, 63);
+    color: rgb(6, 27, 41);
     position: fixed;
     width: 100%;
     top: 0;
@@ -21,7 +21,7 @@ nav {
     display: flex;
 }
 nav a {
-    color: rgb(22, 47, 116);
+    color:  rgb(6, 27, 41);
     text-decoration: none;
     padding: 1rem;
     transition: color 0.3s;
@@ -78,10 +78,13 @@ section {
 }
 
 
-@media (max-width: 768px) and (min-width:480px) {
+@media (max-width: 767px)  {
     .hamburger {
         display: block;
     }
+h1{
+    font: 1em  Arial, sans-serif;
+}
     nav {
         display: none;
         flex-direction: column;
