@@ -9,16 +9,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 1rem; */
+    padding: 1rem;
+    padding-bottom: 0%;
     background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(163, 208, 214) 51.5%, rgba(255,252,247,1) 88.6% );
     color: rgb(6, 27, 41);
     position: fixed;
-    width: 100%;
+    width: 98.5%;
     top: 0;
     z-index: 1000;
 }
 nav {
     display: flex;
+}
+h1{
+    color: white;
 }
 nav a {
     color:  rgb(6, 27, 41);
@@ -81,6 +85,7 @@ section {
 @media (max-width: 767px)  {
     .hamburger {
         display: block;
+        padding-right: 1rem;
     }
 h1{
     font: 1em  Arial, sans-serif;
@@ -108,11 +113,11 @@ h1{
     .project {
         display: flex;
         align-items: center;
-        background: #21262d;
+        background: white;
         margin: 1rem;
         padding: 1rem;
         border-radius: 5px;
-        color: white;
+        color: rgb(6, 27, 41);
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -171,11 +176,11 @@ section {
 .project {
     display: flex;
     align-items: center;
-    background: #21262d;
+    background: white;
     margin: 1rem;
     padding: 1rem;
     border-radius: 5px;
-    color: white;
+    color: rgb(6, 27, 41);
 }
 .project img {
     width: 50%;
@@ -208,7 +213,7 @@ section {
 /* Footer */
 footer {
     background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(163, 208, 214) 51.5%, rgba(255,252,247,1) 88.6% );
-    color: rgb(14, 27, 65);
+    color: rgb(6, 27, 41);
     text-align: center;
     padding: 1.5rem;
     /* position: relative; */
