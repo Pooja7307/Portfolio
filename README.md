@@ -1,6 +1,6 @@
-#  My Developer Portfolio
+#  My Portfolio
 
-Welcome to my personal portfolio! 🚀 Here, I showcase my skills, projects, and achievements as a **Web Engineer** passionate about **JavaScript, MongoDB, and full-stack development**.
+Welcome to my portfolio! 🚀 Here, I showcase my skills, projects, and achievements as a **Web Engineer** passionate about **JavaScript, MongoDB, and full-stack development**.
 
 ## 📂 Project Overview
 
