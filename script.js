@@ -11,11 +11,11 @@ document.getElementById("resume-button").addEventListener("click", function(even
     
     setTimeout(() => {
         let link = document.createElement("a");
-        link.href = "./assets/Resume-WebEngineer.pdf"; // Resume file path
-        link.download = "My_Resume.pdf"; // File name for download
+        link.href = "./assets/Resume-WebEngineer.pdf"; 
+        link.download = "Pooja_Gautam_Resume.pdf"; 
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-    }, 1000); // Delay to ensure new tab opens first
+    }, 1000); 
 });
 
