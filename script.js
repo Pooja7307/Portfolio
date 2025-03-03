@@ -6,12 +6,12 @@ document.getElementById("resume-button").addEventListener("click", function(even
     event.preventDefault(); 
 
     
-    let newTab = window.open("./assets/Resume-WebEngineer.pdf", "_blank");
+    let newTab = window.open("./assets/My-Web-Resume.pdf", "_blank");
 
     
     setTimeout(() => {
         let link = document.createElement("a");
-        link.href = "./assets/Resume-WebEngineer.pdf"; 
+        link.href = "./assets/My-Web-Resume.pdf"; 
         link.download = "Pooja_Gautam_Resume.pdf"; 
         document.body.appendChild(link);
         link.click();
