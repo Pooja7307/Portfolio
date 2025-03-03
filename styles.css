@@ -3,14 +3,15 @@ body {
     margin: 0;
     padding: 0;
     background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(163, 217, 217) 51.5%, rgb(205, 222, 230) 88.6% );
-    color: rgb(6, 12, 29)
+    color: rgb(6, 12, 29);
+    font-size: large;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    padding-bottom: 0%;
+    padding-bottom: 1rem;
     background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(163, 208, 214) 51.5%, rgba(255,252,247,1) 88.6% );
     color: rgb(6, 27, 41);
     position: fixed;
@@ -23,21 +24,27 @@ nav {
 }
 h1{
     color: white;
+    font-size: 2vmax;
+}
+h2{
+    padding-top: 3rem;
 }
 nav a {
     color:  rgb(6, 27, 41);
     text-decoration: none;
     padding: 1rem;
     transition: color 0.3s;
+    font-size: 1.5vmax;
+    margin-right: 10px;
 }
 nav a:hover {
     color: #58a6ff;
 }
 
-.resume-button {
+#resume-button {
     background:  rgba(0,56,68,1) 0%;
     color: white;
-    padding: 0.5rem 1rem;
+    padding:1rem;
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s;
@@ -62,8 +69,8 @@ section {
     text-align: center;
 }
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin: 1rem auto;
 }
@@ -85,10 +92,13 @@ section {
 @media (max-width: 767px)  {
     .hamburger {
         display: block;
-        padding-right: 1rem;
+        padding-right: 3rem;
     }
 h1{
-    font: 1em  Arial, sans-serif;
+    font: 1.6em  Arial, sans-serif;
+}
+header{
+    font-size: large;
 }
     nav {
         display: none;
@@ -136,8 +146,8 @@ section {
     text-align: center;
 }
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin: 1rem auto;
 }
