@@ -6,13 +6,13 @@ document.getElementById("resume-button").addEventListener("click", function(even
     event.preventDefault(); 
 
     
-    let newTab = window.open("./assets/My-Web-Resume.pdf", "_blank");
+    let newTab = window.open("./assets/PoojaGautam-WebEngineer-RSwc.pdf", "_blank");
 
     
     setTimeout(() => {
         let link = document.createElement("a");
-        link.href = "./assets/My-Web-Resume.pdf"; 
-        link.download = "Pooja_Gautam_Resume.pdf"; 
+        link.href = "./assets/PoojaGautam-WebEngineer-RSwc.pdf"; 
+        link.download = "PoojaGautam-WebEngineer-RSwc.pdf"; 
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
