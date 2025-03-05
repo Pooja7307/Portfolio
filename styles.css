@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:  sans-serif;
     margin: 0;
     padding: 0;
-    background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(163, 217, 217) 51.5%, rgb(205, 222, 230) 88.6% );
-    color: rgb(6, 12, 29);
+background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(163, 217, 217) 51.5%, rgb(205, 222, 230) 88.6% ); 
+    color: rgb(6, 27, 41);
     font-size: large;
 }
 header {
@@ -12,8 +12,9 @@ header {
     align-items: center;
     padding: 1rem;
     padding-bottom: 1rem;
-    background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(163, 208, 214) 51.5%, rgba(255,252,247,1) 88.6% );
-    color: rgb(6, 27, 41);
+   
+     background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(163, 208, 214) 51.5%, rgba(255,252,247,1) 88.6% ); 
+    color: white;
     position: fixed;
     width: 98.5%;
     top: 0;
@@ -23,14 +24,15 @@ nav {
     display: flex;
 }
 h1{
-    color: white;
+    /* color: white; */
     font-size: 2vmax;
+    font-family: sans-serif;
 }
 h2{
     padding-top: 3rem;
 }
 nav a {
-    color:  rgb(6, 27, 41);
+    color: rgb(6, 27, 41);
     text-decoration: none;
     padding: 1rem;
     transition: color 0.3s;
@@ -42,10 +44,11 @@ nav a:hover {
 }
 
 #resume-button {
-    background:  rgba(0,56,68,1) 0%;
+    background:  rgb(6, 27, 41);
     color: white;
     padding:1rem;
-    border-radius: 5px;
+    border-radius: 25px;
+    justify-content: center;
     text-decoration: none;
     transition: background 0.3s;
     margin-left: 10px;
@@ -54,6 +57,20 @@ nav a:hover {
 }
 .resume-button:hover {
     background: #d9e6e6;}
+
+    @keyframes zoomIn {
+        0% { transform: scale(0.8); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+    
+    .zoom-text {
+        font-size: 2rem;
+        font-weight: bold;
+        opacity: 0;
+        animation: zoomIn 1.2s ease-out forwards;
+    }
+    
+   
 
 .hamburger {
     display: none;
@@ -95,7 +112,8 @@ section {
         padding-right: 3rem;
     }
 h1{
-    font: 1.6em  Arial, sans-serif;
+    font: 1.6em ;
+    font-family: sans-serif;
 }
 header{
     font-size: large;
@@ -113,12 +131,13 @@ header{
         padding: 1rem 0;
     }
     nav a{
-        color: white;
+        color: rgb(6, 27, 41);
     }
 
     nav.show-nav {
         display: flex;
     }
+    
 
     .project {
         display: flex;
@@ -222,7 +241,7 @@ section {
 }
 /* Footer */
 footer {
-    background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(163, 208, 214) 51.5%, rgba(255,252,247,1) 88.6% );
+    background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(163, 217, 217) 51.5%, rgb(205, 222, 230) 88.6% );
     color: rgb(6, 27, 41);
     text-align: center;
     padding: 1.5rem;
